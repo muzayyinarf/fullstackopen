@@ -1,19 +1,38 @@
+### GET all persons (Exercise 3.1)
 GET http://localhost:3001/api/persons
 
-###
+### GET info (Exercise 3.2)
 GET http://localhost:3001/info
 
-###
+### GET single person by id (Exercise 3.3)
 GET http://localhost:3001/api/persons/4
 
-###
+### DELETE person by id (Exercise 3.4)
 DELETE http://localhost:3001/api/persons/4
 
-###
+### POST person valid (Exercise 3.5 & 3.8)
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "number": "123-456-7890"
+  "name": "Linus Torvalds",
+  "number": "040-1234567"
+}
+
+### POST invalid (nama atau nomor kosong - Exercise 3.6)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "",
+  "number": ""
+}
+
+### POST invalid (nama duplikat - Exercise 3.6)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Arto Hellas",
+  "number": "040-999999"
 }
