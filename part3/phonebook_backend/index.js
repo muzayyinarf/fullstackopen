@@ -48,7 +48,7 @@ let persons = [
 ]
 
 // Exercise 3.1: GET semua data kontak
-app.get('/api/persons', (request, response) => {
+app.get(['/api/persons', '/persons'], (request, response) => {
   response.json(persons)
 })
 
@@ -64,7 +64,7 @@ app.get('/info', (request, response) => {
 })
 
 // Exercise 3.3: GET satu kontak berdasarkan ID
-app.get('/api/persons/:id', (request, response) => {
+app.get(['/api/persons/:id', '/persons/:id'], (request, response) => {
   const id = request.params.id
   const person = persons.find((p) => p.id === id)
 
@@ -76,7 +76,7 @@ app.get('/api/persons/:id', (request, response) => {
 })
 
 // Exercise 3.4: DELETE kontak berdasarkan ID
-app.delete('/api/persons/:id', (request, response) => {
+app.delete(['/api/persons/:id', '/persons/:id'], (request, response) => {
   const id = request.params.id
   persons = persons.filter((p) => p.id !== id)
   response.status(204).end()
@@ -88,7 +88,7 @@ const generateId = () => {
 }
 
 // Exercise 3.5 & 3.6: POST kontak baru dengan validasi
-app.post('/api/persons', (request, response) => {
+app.post(['/api/persons', '/persons'], (request, response) => {
   const body = request.body
 
   // Validasi: nama atau nomor wajib diisi

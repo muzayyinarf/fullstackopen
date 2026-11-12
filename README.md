@@ -14,6 +14,6 @@ Repository for exercise submissions of the [Full Stack Open](https://fullstackop
   - [`part2/courseinfo`](./part2/courseinfo) - Exercises 2.1 - 2.5
   - [`part2/phonebook`](./part2/phonebook) - Exercises 2.6 - 2.17
   - [`part2/countries`](./part2/countries) - Exercises 2.18 - 2.20
-- [`part3/`](./part3) - Programming a server with NodeJS and Express (Exercises 3.1 - 3.11)
-  - [`part3/backend`](./part3/backend) - Notes Backend (Part 3a & 3b course project)
-  - [`part3/phonebook_backend`](./part3/phonebook_backend) - Exercises 3.1 - 3.11 (Part 3a & 3b)
+- [`part3/`](./part3) - Programming a server with NodeJS and Express (Exercises 3.1 - 3.12)
+  - [`part3/backend`](./part3/backend) - Notes Backend (Part 3a, 3b, 3c)
+  - [`part3/phonebook_backend`](./part3/phonebook_backend) - Exercises 3.1 - 3.12 (Part 3a, 3b, 3c)
